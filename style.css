@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: radial-gradient(circle, rgba(63,251,224,1) 0%, rgba(70,208,252,1) 100%);;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 700px;
+    padding: 10px;
+    margin:100px auto;
+}
+
+header {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+header > h1 {
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    padding: 10px;
+    margin-bottom: 0px;
+    
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    margin-bottom: 20px;
+}
+
+#form-container > input {
+    flex: 1;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    padding: 12px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+#form-container > button {
+    flex: 0.2;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.todolist-container ul {
+    list-style: none;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    column-gap: 5px;
+}
+
+.list-item p {
+    flex: 1;
+    overflow: auto;
+}
+
+.list-item button {
+    width: 65px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.checked {
+    text-decoration: line-through;
+}
