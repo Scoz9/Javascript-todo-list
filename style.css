@@ -9,11 +9,15 @@ html {
     font-size: 16px;
 }
 
+body {
+    background: radial-gradient(circle, rgba(63,251,224,1) 0%, rgba(70,208,252,1) 100%);;
+}
+
 .container {
-    min-width: 500px;
+    min-width: 300px;
     max-width: 700px;
-    padding: 5%;
-    margin: auto;
+    padding: 10px;
+    margin:100px auto;
 }
 
 header {
@@ -54,23 +58,27 @@ header > h1 {
 
 .todolist-container ul {
     list-style: none;
-    padding: 10px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-#list-item button {
-    height: 25px;
-    width: 50px;
-}
-
-#list-item {
+.list-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    margin-bottom: 10px;
     column-gap: 5px;
+}
+
+.list-item p {
+    flex: 1;
+    overflow: auto;
+}
+
+.list-item button {
+    width: 65px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.checked {
+    text-decoration: line-through;
 }
